@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "606生物演算實驗室"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "教授1"
 description              : &description "personal description"
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,14 +21,14 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "Resized_10219.png"
+  name             : "林俊良"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "簡介"
+  location         : "台中"
+  employer         : "國立中興大學"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "chunlin@dragon.nchu.edu.tw" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -77,11 +77,16 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    title: '出版書籍'
   manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+    title: '期刊論文'
+  reports:
+    title: '研究報告'
+  patents:
+    title: '專利'
+  book_chapters:
+    title: '專書章節'
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -217,7 +222,7 @@ collections:
     permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:title/
   portfolio:
     output: true
     permalink: /:collection/:path/
