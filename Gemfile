@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', group: :jekyll_plugins
+group :jekyll_plugins do
+  gem 'jekyll'
+  gem 'jekyll-feed'
+  gem 'jekyll-sitemap'
+  gem 'jemoji'
+  gem 'webrick', '~> 1.8'
+end
 
-# 解決 Windows 環境的時區問題
-gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
+gem 'github-pages'
+gem 'tzinfo-data'
